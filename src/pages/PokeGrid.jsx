@@ -44,12 +44,12 @@ export default function PokeGrid() {
       <div className="header">
         <input
           className="input"
-          placeholder="Search by name..."
+          placeholder="Busca por nombre..."
           value={query}
           onChange={(e)=>setQuery(e.target.value)}
         />
         <button className="btn secondary" onClick={()=>setShowOnlyFavorites(v=>!v)}>
-          {showOnlyFavorites ? 'Show All' : 'Show Favorites'}
+          {showOnlyFavorites ? 'Ver Todos' : 'Ver Favoritos'}
         </button>
       </div>
       <div className="grid">
